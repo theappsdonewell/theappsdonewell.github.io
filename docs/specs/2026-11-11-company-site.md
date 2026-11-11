@@ -68,6 +68,14 @@ Human task **#145**: https://github.com/strinkrf851none/373-sheets-diff/issues/1
 
 The currently hard-coded store URL is not verified as an available listing. A public fetch redirected to an `empty-title` shell, returned a generic Chrome Web Store title, and did not identify the product. HTTP 200 alone is not proof. Do not infer a public destination from the local extension ID.
 
+### Current store identity (2026-11-11)
+
+The user confirmed the Chrome Web Store item ID `fdaglnjlmdflcphdlikmecffibopgaje` for the existing first store item and draft upload. The item is **unpublished**; this is a user-provided store item identity, not a verified public listing.
+
+- The official public listing URL is still awaited in **#145**. Do not construct or activate a store URL from the item ID.
+- The install action stays visibly inactive, unchanged, until the actual public URL is supplied and verified.
+- `mgffoofmlpaimffhonclpgbgkffmelmd` is the pinned **local development ID**, not a confirmed store ID and not evidence of a public listing.
+
 ## Repository and deployment facts
 
 - Site repository: `theappsdonewell/theappsdonewell.github.io`.
