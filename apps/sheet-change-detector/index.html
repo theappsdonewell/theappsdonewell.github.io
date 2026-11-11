@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sheet Change Detector — The apps done well</title>
+  <meta name="description" content="A Chrome extension for comparing values and formulas in Google Sheets. Compare two ranges or a saved snapshot and review cell-level changes.">
+  <link rel="canonical" href="https://theappsdonewell.github.io/apps/sheet-change-detector/">
+  <meta property="og:title" content="Sheet Change Detector — The apps done well">
+  <meta property="og:description" content="Find what changed in Google Sheets. Compare values and formulas, cell by cell.">
+  <meta property="og:url" content="https://theappsdonewell.github.io/apps/sheet-change-detector/">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="company-site">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-wrap">
+    <header class="site-header">
+      <a class="wordmark" href="/" aria-label="The apps done well home">The apps done well<span class="maker-mark" aria-hidden="true"></span></a>
+      <nav aria-label="Main navigation"><a href="/">Company home</a><a href="mailto:theappsdonewell@gmail.com">Support</a></nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="product-intro" aria-labelledby="product-heading">
+        <p class="context">A Chrome extension by The apps done well</p>
+        <h1 id="product-heading">Sheet Change Detector</h1>
+        <p class="product-lead">Find what changed.<br>Not just what’s there.</p>
+        <div class="product-summary">
+          <p>Compare two ranges in Google Sheets, or compare a saved snapshot with the current range. See which cell values and formulas changed without checking each one yourself.</p>
+          <div class="install-state"><button type="button" disabled aria-describedby="install-note">Add to Chrome — inactive</button><p id="install-note">Installation is inactive until the official store link is verified.</p></div>
+        </div>
+      </section>
+
+      <section class="overview-sample" aria-labelledby="example-heading">
+        <div><h2 id="example-heading">A value changed.<br>So did a formula.</h2><p>In this sample supplies budget, the amount in B4 increased and the total in B8 now includes one more row. Both differences matter.</p><p>Sheet Change Detector helps you review the difference between the earlier sheet and the current one.</p></div>
+        <figure class="comparison" aria-labelledby="sample-caption">
+          <figcaption id="sample-caption"><strong>A supplies budget, compared.</strong><span>Sample data: snapshot versus current range</span></figcaption>
+          <table>
+            <caption class="visually-hidden">Two changed cells in a sample budget</caption>
+            <thead><tr><th scope="col">Cell</th><th scope="col">Before</th><th scope="col">After</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">B4<span>Value</span></th><td>312.40</td><td class="changed-value">431.90<span class="change-label">Value changed</span></td></tr>
+              <tr><th scope="row">B8<span>Formula</span></th><td><code>=SUM(B2:B6)</code></td><td class="changed-value"><code>=SUM(B2:B7)</code><span class="change-label">Formula changed</span></td></tr>
+            </tbody>
+          </table>
+          <div class="sample-result"><span class="result-marker" aria-hidden="true"></span><p><strong>Two cells. Two different changes.</strong><br>Review the amount and the formula separately.</p></div>
+          <p class="sample-note">Illustration only. Comparisons run in the Chrome extension, not on this website. No sheet access or uploads here.</p>
+        </figure>
+      </section>
+      <section class="maker-note" aria-labelledby="questions-heading"><h2 id="questions-heading">Questions about<br>the extension?</h2><div><p>Get in touch for product support.</p><a class="text-link" href="mailto:theappsdonewell@gmail.com">Email theappsdonewell@gmail.com</a><p class="legal-note">Read the <a href="/privacy.html">privacy policy</a> and <a href="/terms.html">terms of use</a>.</p></div></section>
+    </main>
+    <footer class="site-footer"><p class="footer-name">The apps done well</p><a class="support-link" href="mailto:theappsdonewell@gmail.com">theappsdonewell@gmail.com</a><nav aria-label="Legal"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms of use</a></nav></footer>
+  </div>
+</body>
+</html>
