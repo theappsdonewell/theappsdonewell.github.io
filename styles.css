@@ -138,3 +138,70 @@ button{font:600 16px/1.4 'Public Sans',sans-serif}
   .product-summary>p{font-size:16px}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Product journey: the comparison leads; plans stay specific to this extension. */
+.product-page .product-intro{padding-bottom:28px}
+.product-page .product-lead{font-size:26px;color:var(--slate);margin-top:20px}
+.journey-nav{display:flex;flex-wrap:wrap;gap:8px 30px;margin-top:26px}
+.journey-nav a{display:inline-block;font-size:14px;padding-block:10px}
+.journey-sample{padding-block:48px 72px;gap:64px}
+.journey-sample .install-state{margin-top:28px}
+.sample-explanation{border-top:1px solid var(--mist);font-size:14px;margin:0 26px 22px}
+.sample-explanation summary{cursor:pointer;color:var(--blue);font-weight:600;padding-block:16px;min-height:48px}
+.sample-explanation summary:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
+.sample-explanation>div{padding:10px 0 6px;color:var(--slate)}
+.sample-explanation p+p{margin-top:12px}
+.sample-explanation code{font-size:13px}
+.journey-section{padding-block:64px 72px;border-top:1px solid var(--mist)}
+.section-intro{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:64px;align-items:start;margin-bottom:40px}
+.section-intro h2{font-size:36px}
+.section-intro>p{font-size:17px;color:var(--slate);max-width:58ch}
+.workflow-steps{list-style:none;counter-reset:workflow;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;margin:0;padding:0}
+.workflow-steps li{counter-increment:workflow;border-top:2px solid var(--blue);padding-top:20px}
+.workflow-steps li::before{content:counter(workflow);display:block;color:var(--blue);font-weight:600;font-size:16px;margin-bottom:24px}
+.workflow-steps h3{font-size:22px;letter-spacing:-.7px;margin-bottom:14px}
+.workflow-steps p{font-size:16px;color:var(--slate)}
+.plan-comparison{margin-left:calc((100% - 64px)*.41 + 64px)}
+.plans-table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:16px;line-height:1.5;font-variant-numeric:tabular-nums}
+.plans-table th,.plans-table td{padding:18px 16px;border-bottom:1px solid var(--mist);text-align:left;vertical-align:top}
+.plans-table th:first-child,.plans-table thead td{width:40%;padding-left:0}
+.plans-table th{font-weight:600}
+.plans-table thead th{font-size:21px;background:var(--mist)}
+.plans-table td:last-child{background:var(--white)}
+.plan-price strong{font-size:27px;font-weight:800;letter-spacing:-1px;white-space:nowrap}
+.plan-price strong span{font-size:14px;font-weight:400;letter-spacing:0}
+.monthly-price{display:block;font-size:14px;margin-top:8px}
+.plan-note{font-size:14px;color:var(--slate);margin-top:22px}
+.plan-note+.plan-note{margin-top:12px}
+.capability-list{margin:0}
+.capability-list>div{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:64px;padding-block:22px;border-top:1px solid var(--mist)}
+.capability-list dt{font-weight:600;font-size:17px}
+.capability-list dd{margin:0;font-size:16px;color:var(--slate);max-width:60ch}
+@media(max-width:1000px){
+  .journey-sample,.section-intro,.capability-list>div{gap:32px}
+  .section-intro h2{font-size:32px}
+  .workflow-steps{gap:24px}
+  .plan-comparison{margin-left:0;max-width:800px}
+}
+@media(max-width:700px){
+  .product-page .product-lead{font-size:22px;line-height:1.4}
+  .journey-nav{gap:0 24px;margin-top:20px}
+  .journey-nav a{font-size:13px}
+  .journey-sample{padding-block:36px 48px}
+  .sample-explanation{margin-inline:20px}
+  .journey-section{padding-block:40px 48px}
+  .section-intro{grid-template-columns:1fr;gap:22px;margin-bottom:30px}
+  .section-intro h2{font-size:30px}
+  .section-intro>p{font-size:16px}
+  .workflow-steps{grid-template-columns:1fr;gap:28px}
+  .workflow-steps li{position:relative;padding:20px 0 0 38px}
+  .workflow-steps li::before{position:absolute;left:0;top:19px;margin:0}
+  .workflow-steps h3{font-size:21px;margin-bottom:10px}
+  .plans-table{font-size:13px}
+  .plans-table th,.plans-table td{padding:16px 8px}
+  .plans-table th:first-child,.plans-table thead td{width:38%}
+  .plans-table thead th{font-size:19px}
+  .plan-price strong{font-size:23px}
+  .plan-price strong span,.monthly-price{font-size:12px}
+  .capability-list>div{grid-template-columns:1fr;gap:10px;padding-block:22px}
+}
