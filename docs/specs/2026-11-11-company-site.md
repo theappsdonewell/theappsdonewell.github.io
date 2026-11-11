@@ -1,7 +1,7 @@
 # The apps done well — company website brief
 
 Date: 2026-11-11.
-Status: Approved for ticket publication; website implementation has not started.
+Status: Tickets published; website implementation has not started.
 
 ## Goal
 
@@ -108,9 +108,9 @@ The earlier exploration incorrectly attributed extension CI to this site and cla
 
 ## Approved ticket graph
 
-1. **Company homepage and first-product discovery** — no blockers. A complete company-first homepage and functioning minimum product overview, shared identity, legal/support navigation, and a concrete sample illustration.
-2. **Complete the Sheet Change Detector product journey** — blocked by ticket 1. A full product page, sample demonstration, workflow, accurate product-specific plans/capabilities, and safe inactive installation handoff.
-3. **Verify and publish the company/product website** — blocked by ticket 2 (which includes ticket 1). Browser/accessibility/performance/legal/link verification, publication through Pages, and live post-deploy proof.
+1. **site: company-first homepage and first-product discovery** — [GitHub issue #146](https://github.com/strinkrf851none/373-sheets-diff/issues/146) — no native blockers. A complete company-first homepage and functioning minimum product overview, shared identity, legal/support navigation, and a concrete sample illustration.
+2. **site: complete the Sheet Change Detector product journey** — [GitHub issue #147](https://github.com/strinkrf851none/373-sheets-diff/issues/147) — native blocker: #146. A full product page, sample demonstration, workflow, accurate product-specific plans/capabilities, and safe inactive installation handoff.
+3. **site: verify and publish the company and product website** — [GitHub issue #148](https://github.com/strinkrf851none/373-sheets-diff/issues/148) — native blocker: #147 (#146 transitively). Browser/accessibility/performance/legal/link verification, publication through Pages, and live post-deploy proof.
 4. Existing **human #145** — can start immediately; supplies the official store URL and activates installation. It does not gate website publication.
 
-The user approved this granularity and dependency structure on 2026-11-11; publication is pending the real issue IDs.
+The user approved this granularity and dependency structure on 2026-11-11. The three tickets were published on 2026-11-11 as #146, #147, and #148 with native dependencies #147 blocked by #146 and #148 blocked by #147. Human task #145 remains independent and does not gate publication.
