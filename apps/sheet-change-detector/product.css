@@ -11,7 +11,7 @@
 .hero-bottom{display:grid;grid-template-columns:1fr 340px;gap:48px;align-items:center;margin-top:24px}
 .diff-product .product-lead{margin:0;font-size:23px;line-height:1.4;letter-spacing:-.65px;color:var(--slate)}
 .product-lead strong{font-weight:600;color:var(--ink)}
-.diff-product .install-state button{display:flex;justify-content:space-between;align-items:center;gap:44px;background:#e9eae8;border:1px solid #929591;color:#4e504d;border-radius:3px;padding:12px 18px;font-size:14px;width:100%}
+.diff-product .install-state button,.diff-product .install-state a{display:flex;justify-content:space-between;align-items:center;gap:44px;background:#e9eae8;border:1px solid #929591;color:#4e504d;border-radius:3px;padding:12px 18px;font-size:14px;width:100%;text-decoration:none}
 .diff-product .install-state p{font-size:11px;line-height:1.6;margin-top:8px;max-width:none}
 .workspace{display:grid;grid-template-columns:minmax(0,1fr) 310px;align-items:stretch;border:1px solid #c5c8c4;background:#fff;box-shadow:0 16px 40px #2323230a}
 .sheet{min-width:0;display:flex;flex-direction:column}
